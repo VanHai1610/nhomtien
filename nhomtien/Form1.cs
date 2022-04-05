@@ -116,6 +116,12 @@ namespace nhomtien
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            HieuForm depTrai = new HieuForm();
+            depTrai.Show();
+        }
     }
 }
 

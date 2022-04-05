@@ -42,6 +42,7 @@
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button3
@@ -158,7 +159,7 @@
             "Binary",
             "Octal",
             "Hexadecimon"});
-            this.comboBox1.Location = new System.Drawing.Point(559, 36);
+            this.comboBox1.Location = new System.Drawing.Point(559, 48);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(189, 28);
             this.comboBox1.TabIndex = 25;
@@ -192,11 +193,23 @@
             this.textBox4.Size = new System.Drawing.Size(234, 27);
             this.textBox4.TabIndex = 42;
             // 
+            // button4
+            // 
+            this.button4.Font = new System.Drawing.Font("Siemens Sans", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button4.Location = new System.Drawing.Point(12, 365);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(151, 50);
+            this.button4.TabIndex = 43;
+            this.button4.Text = "HieuForm";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
@@ -234,5 +247,6 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;
+        private Button button4;
     }
 }
