@@ -12,7 +12,7 @@ namespace nhomtien
 {
     public partial class Form1 : Form
     {
-        internal string[] myCollection = new string[] { "Decimal", "Binary", "Octal", "Hexadecimon" };
+        internal string[] myCollection = new string[] { "Decimal", "Binary", "Octal", "Hexadecimal" };
         private Keys[] Binary = new[] { Keys.Back, Keys.D0, Keys.D1 };
         private Keys[] Octal = new[] { Keys.Back, Keys.D0, Keys.D1, Keys.D2, Keys.D3, Keys.D4, Keys.D5, Keys.D6, Keys.D7, Keys.D8 };
         private char[] Hexadecimal = new[] { 'a', 'b', 'c', 'd', 'e', 'f' };
@@ -70,7 +70,7 @@ namespace nhomtien
                 label4.Text = myCollection[3];
 
             } 
-            if (comboBox2.SelectedIndex == 1)
+            else if (comboBox2.SelectedIndex == 1)
             {
                 label1.Text = myCollection[1];
                 label2.Text = myCollection[0];
@@ -78,7 +78,7 @@ namespace nhomtien
                 label4.Text = myCollection[3];
 
             }
-            if (comboBox2.SelectedIndex == 2)
+            else if (comboBox2.SelectedIndex == 2)
             {
                 label1.Text = myCollection[2];
                 label2.Text = myCollection[0];
@@ -86,7 +86,7 @@ namespace nhomtien
                 label4.Text = myCollection[3];
 
             }
-            if (comboBox2.SelectedIndex == 3)
+            else if (comboBox2.SelectedIndex == 3)
             {
                 label1.Text = myCollection[3];
                 label2.Text = myCollection[0];
@@ -130,5 +130,6 @@ namespace nhomtien
                 }
             }
         }
+
     }
 }
